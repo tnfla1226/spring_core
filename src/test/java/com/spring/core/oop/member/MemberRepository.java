@@ -9,4 +9,5 @@ public interface MemberRepository {
 
     //회원 조회 기능
     Member findById(Long id);
+
 }

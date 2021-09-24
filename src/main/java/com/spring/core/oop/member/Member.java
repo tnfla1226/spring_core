@@ -20,4 +20,5 @@ public class Member {
         4. hashcode / toString
     */
 
+
 }

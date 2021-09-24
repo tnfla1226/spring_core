@@ -10,4 +10,5 @@ public class DataBaseMemberRepository implements MemberRepository {
     public Member findById(Long id) {
         return null;
     }
+
 }
