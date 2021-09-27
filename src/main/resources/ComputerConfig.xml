@@ -9,7 +9,7 @@
         <constructor-arg ref="keyboard" />
     </bean>
     <bean id="mouse" class="com.spring.core.quiz.Mouse"></bean>
-    <bean id="moniter" class="com.spring.core.quiz.Moniter"></bean>
+    <bean id="monitor" class="com.spring.core.quiz.Monitor"></bean>
     <bean id="keyboard" class="com.spring.core.quiz.KeyBoard"></bean>
 
 </beans>
