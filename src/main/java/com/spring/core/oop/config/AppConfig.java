@@ -1,5 +1,7 @@
 package com.spring.core.oop.config;
 
+import com.spring.core.oop.discount.DiscountPolicy;
+import com.spring.core.oop.discount.FixDiscountPolicy;
 import com.spring.core.oop.member.MemberRepository;
 import com.spring.core.oop.member.MemberService;
 import com.spring.core.oop.member.MemoryMemberRepository;
@@ -13,6 +15,12 @@ public class AppConfig {
         return new MemoryMemberRepository();
     }
 
+    //할인정책 객체 생성 기능
+    public DiscountPolicy discountPolicy() {
+        return new FixDiscountPolicy();
+
+    }
+
     //회원 서비스 객체 생성해주는 기능
     public MemberService memberService() {
         return new MemberService(memberRepository());
@@ -20,7 +28,7 @@ public class AppConfig {
 
     //주문 서비스 객체 생성 기능
     public OrderService orderService() {
-        return new OrderService(memberRepository());
+        return new OrderService(memberRepository(), discountPolicy());
     }
 
 

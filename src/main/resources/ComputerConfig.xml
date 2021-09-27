@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="computer" class="com.spring.core.quiz.Computer">
+        <constructor-arg ref="mouse" />
+        <constructor-arg ref="monitor" />
+        <constructor-arg ref="keyboard" />
+    </bean>
+    <bean id="mouse" class="com.spring.core.quiz.Mouse"></bean>
+    <bean id="moniter" class="com.spring.core.quiz.Moniter"></bean>
+    <bean id="keyboard" class="com.spring.core.quiz.KeyBoard"></bean>
+
+</beans>
